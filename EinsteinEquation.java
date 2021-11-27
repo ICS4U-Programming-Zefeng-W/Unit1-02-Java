@@ -18,7 +18,7 @@ class EinsteinEquation {
     System.out.println("What is the mass of the object?");
     Scanner scannerObj = new Scanner(System.in);
     double objMass  = scannerObj.nextDouble();
-    final double lightSpeed = 2.988e8;
+    final double lightSpeed = 2.998e8;
     double energyReleased = objMass * Math.pow(lightSpeed, 2);
     System.out.printf("%s Joules of energy is released from an object of mass %s kg.", 
                      energyReleased, objMass);
