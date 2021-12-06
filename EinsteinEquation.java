@@ -13,12 +13,15 @@ import java.util.Scanner;
 
 // class EinsteinEquation.
 class EinsteinEquation {
-  // Main calculates  and outputs the amonnt of energy that can be released from a given mass
+  // declare constant
+  final static double lightSpeed = 2.998e8;
+  
   public static void main(String[] args) {
+    // Ask user for the mass of an object and read it
     System.out.println("What is the mass of the object?");
     Scanner scannerObj = new Scanner(System.in);
     double objMass  = scannerObj.nextDouble();
-    final double lightSpeed = 2.998e8;
+    // calculate and display the amount of energy released
     double energyReleased = objMass * Math.pow(lightSpeed, 2);
     System.out.printf("%s Joules of energy is released from an object of mass %s kg.", 
                      energyReleased, objMass);
